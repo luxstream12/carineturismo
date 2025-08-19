@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carine Fonseca Turismo | Foz do Iguaçu</title>
+  <meta name="description" content="Transporte turístico privativo em Foz do Iguaçu, Ciudad del Este (PY) e Puerto Iguazú (AR) com Carine Fonseca." />
+  <style>
+    :root{
+      --brand:#0ea5b5; /* ciano elegante */
+      --brand-dark:#0b8a98;
+      --text:#0f172a; /* slate-900 */
+      --muted:#475569; /* slate-600 */
+      --bg:#ffffff;
+      --card:#f8fafc; /* slate-50 */
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Open Sans','Helvetica Neue',Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+    img{max-width:100%;display:block}
+    a{color:inherit}
+
+    /* Header / Hero */
+    header{
+      background:linear-gradient(180deg, rgba(14,165,181,.12), rgba(14,165,181,0));
+      border-bottom:1px solid #e2e8f0;
+      position:sticky;top:0;z-index:30;backdrop-filter:saturate(180%) blur(10px);background-color:rgba(255,255,255,.8)
+    }
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{display:flex;gap:10px;align-items:center}
+    .logo{width:36px;height:36px;border-radius:12px;background:var(--brand);display:grid;place-items:center;color:#fff;font-weight:700;box-shadow:0 2px 6px rgba(0,0,0,.15)}
+    nav a{font-weight:600;color:var(--muted);text-decoration:none;margin-left:18px}
+    nav a:hover{color:var(--text)}
+
+    .hero{display:grid;gap:28px;padding:36px 0 12px 0}
+    .hero h1{font-size:clamp(28px,4vw,44px);line-height:1.15;margin:8px 0}
+    .hero p{color:var(--muted);font-size:clamp(16px,2.2vw,18px)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+    .btn{appearance:none;border:none;border-radius:14px;padding:14px 18px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+    .btn-primary{background:var(--brand);color:#fff}
+    .btn-primary:hover{background:var(--brand-dark)}
+    .btn-outline{background:#fff;border:1px solid #cbd5e1;color:var(--text)}
+
+    /* Sections */
+    section{padding:48px 0}
+    h2{font-size:clamp(22px,3.2vw,30px);margin:0 0 8px 0}
+    .lead{color:var(--muted);margin:0 0 24px 0}
+
+    .grid{display:grid;gap:18px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .grid-2{grid-template-columns:repeat(2,1fr)}
+    @media (max-width:900px){.grid-3{grid-template-columns:1fr 1fr}}
+    @media (max-width:640px){.grid-3,.grid-2{grid-template-columns:1fr}}
+
+    .card{background:var(--card);border:1px solid #e2e8f0;border-radius:16px;padding:16px}
+    .tag{display:inline-block;background:#e0f2fe;color:#075985;border:1px solid #bae6fd;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:700}
+
+    /* Floating WhatsApp */
+    .wa-float{position:fixed;right:16px;bottom:16px;z-index:50}
+    .wa-btn{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:#25D366;color:#fff;font-size:30px;text-decoration:none;box-shadow:0 10px 20px rgba(0,0,0,.18)}
+    .wa-label{position:fixed;right:86px;bottom:26px;background:#111827;color:#fff;padding:8px 10px;border-radius:10px;font-size:13px;box-shadow:0 8px 16px rgba(0,0,0,.16)}
+
+    /* Footer */
+    footer{border-top:1px solid #e2e8f0;background:#fff;padding:22px 0;color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <div class="logo">CF</div>
+        <div>
+          <strong>Carine Fonseca Turismo</strong><br/>
+          <small style="color:var(--muted)">Foz do Iguaçu • PY • AR</small>
+        </div>
+      </div>
+      <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#destinos">Destinos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <div class="container hero">
+    <span class="tag">Transporte Turístico Privativo</span>
+    <h1>Veja o que eu faço e chame no WhatsApp quando quiser</h1>
+    <p>Sou <strong>Carine Fonseca</strong> e transporto passageiros para os pontos turísticos de <strong>Foz do Iguaçu</strong>, compras em <strong>Ciudad del Este (Paraguai)</strong> e passeios em <strong>Puerto Iguazú (Argentina)</strong>. Conforto, segurança e pontualidade.</p>
+    <div class="cta">
+      <a class="btn btn-primary" id="ctaWA" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <a class="btn btn-outline" href="#servicos">Ver serviços</a>
+    </div>
+  </div>
+
+  <!-- Serviços -->
+  <section id="servicos">
+    <div class="container">
+      <h2>Serviços</h2>
+      <p class="lead">Atendimento porta a porta, horários combinados, carro higienizado e ar-condicionado.</p>
+      <div class="grid grid-3">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1520975922284-c0e6689a9f2f?q=80&w=1200&auto=format&fit=crop" alt="Cataratas do Iguaçu"/>
+          <h3>City Tour Foz</h3>
+          <p>Cataratas brasileiras, Parque das Aves, Templo Budista, Mesquita e Marco das Três Fronteiras.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1582582621959-90d10544ce38?q=80&w=1200&auto=format&fit=crop" alt="Compras no Paraguai"/>
+          <h3>Compras no Paraguai</h3>
+          <p>Transporte para Ciudad del Este com paradas em shoppings e lojas confiáveis. Dicas de cota e alfândega.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1542382257-80dedb725088?q=80&w=1200&auto=format&fit=crop" alt="Argentina Puerto Iguazú"/>
+          <h3>Puerto Iguazú (Argentina)</h3>
+          <p>Duty Free, Feirinha, restaurantes e Cataratas argentinas. Auxílio na travessia de fronteira.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinos em destaque -->
+  <section id="destinos" style="background:var(--card)">
+    <div class="container">
+      <h2>Destinos em destaque</h2>
+      <p class="lead">Alguns lugares que você pode conhecer comigo.</p>
+      <div class="grid grid-3">
+        <div class="card"><h3>Foz do Iguaçu (Brasil)</h3><p>Cataratas, Parque das Aves, Itaipu, Templo Budista, Mesquita, Marco das Três Fronteiras.</p></div>
+        <div class="card"><h3>Ciudad del Este (Paraguai)</h3><p>Shoppings e lojas de eletrônicos, perfumes e utilidades. Compras com conforto e segurança.</p></div>
+        <div class="card"><h3>Puerto Iguazú (Argentina)</h3><p>Gastronomia, vinhos, Duty Free e vistas incríveis do Parque Nacional Iguazú.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos simples -->
+  <section>
+    <div class="container">
+      <h2>O que dizem</h2>
+      <div class="grid grid-3">
+        <div class="card"><p>“Atendimento excelente e muito pontual. Recomendo!” — Juliana</p></div>
+        <div class="card"><p>“Fizemos compras no PY com tranquilidade, tudo combinado certinho.” — Carlos</p></div>
+        <div class="card"><p>“Passeio em Foz e Argentina perfeito para nossa família.” — Ribeiro</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <p class="lead">Diga seu hotel/horário e eu retorno com orçamento.</p>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Fale comigo</h3>
+          <p><strong>WhatsApp:</strong> <a id="linkWAinline" target="_blank" rel="noopener">Clique para abrir</a></p>
+          <p><strong>E-mail:</strong> <a href="mailto:contato@carinefoz.com">contato@carinefoz.com</a></p>
+          <p style="font-size:13px;color:var(--muted)">Atendo em Português e Espanhol. Valores variam conforme data e número de passageiros.</p>
+        </div>
+        <div class="card">
+          <h3>Localização</h3>
+          <iframe title="Mapa Foz do Iguaçu" width="100%" height="260" style="border:0;border-radius:12px" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d458095.4624321589!2d-54.966587!3d-25.516335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f69021d8d3e7ef%3A0x63b9d1a6ee83b1c6!2sFoz%20do%20Igua%C3%A7u%2C%20Paran%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1689180000000"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">© <span id="year"></span> Carine Fonseca Turismo — Todos os direitos reservados.</div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <div class="wa-float">
+    <span class="wa-label">Falar com Carine</span>
+    <a class="wa-btn" id="waFloat" aria-label="Abrir WhatsApp" target="_blank" rel="noopener">💬</a>
+  </div>
+
+  <script>
+    // 🔧 Edite APENAS este número para seu WhatsApp no formato DDI+DDD+NUMERO, ex: 55 45 99999-9999 -> 5545999999999
+    const WHATSAPP_NUMBER = '5545999999999';
+    const MSG = 'Oi Carine! Quero informações sobre passeios em Foz/PY/AR.';
+    const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(MSG)}`;
+
+    // aplica em todos os botões/links
+    document.getElementById('ctaWA').href = waLink;
+    document.getElementById('waFloat').href = waLink;
+    document.getElementById('linkWAinline').href = waLink;
+
+    // ano no rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
